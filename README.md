@@ -28,4 +28,15 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-4. Run the code blocks `notebooks/test.ipynb` to ensure everything is working correctly
+4. Run the code blocks in `notebooks/test.ipynb` to ensure everything is working correctly
+
+### Directory Structure
+
+```
+└── cse-44648-team-4/
+    ├── data/             # Datasets live in here
+    │   ├── raw/          # Raw datasets
+    │   └── processed/    # Cleaned, processed datasets
+    ├── notebooks/        # .ipynb notebooks for analysis, exploratory work, etc.
+    └── src/              # .py files containing pipelines, utility functions, etc.
+```
