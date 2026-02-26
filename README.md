@@ -34,16 +34,33 @@ pip install -r requirements.txt
 
 ```
 .
-├── data/                  # datasets folder
-│   ├── raw/               # raw datasets
-│   └── processed/         # processed, clean datasets
-├── notebooks/             # exploratory notebooks
-│   ├── phase-1/           # phase 1 notebooks
+├── data/
+│   ├── crypto/
+│   │   ├── raw/
+│   │   ├── interim/
+│   │   └── processed/
+│   └── dropout/
+│       ├── raw/
+│       ├── interim/
+│       └── processed/
+├── notebooks/
+│   ├── phase-1/
 │   │   ├── crypto.ipynb
 │   │   └── dropout.ipynb
-│   └── phase-2/           # phase 2 notebooks
+│   └── phase-2/
 │       ├── crypto.ipynb
 │       └── dropout.ipynb
-└── src/                   # models, utility functions, etc.
-    └── ...
+├── src/
+│   ├── crypto/
+│   │   ├── cleaning.py
+│   │   ├── features.py
+│   │   └── models.py
+│   ├── dropout/
+│   │   ├── cleaning.py
+│   │   ├── features.py
+│   │   └── models.py
+│   └── utils.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
