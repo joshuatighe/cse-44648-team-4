@@ -33,10 +33,34 @@ pip install -r requirements.txt
 ### Directory Structure
 
 ```
-└── cse-44648-team-4/
-    ├── data/             # Datasets live in here
-    │   ├── raw/          # Raw datasets
-    │   └── processed/    # Cleaned, processed datasets
-    ├── notebooks/        # .ipynb notebooks for analysis, exploratory work, etc.
-    └── src/              # .py files containing pipelines, utility functions, etc.
+.
+├── data/
+│   ├── crypto/
+│   │   ├── raw/
+│   │   ├── interim/
+│   │   └── processed/
+│   └── dropout/
+│       ├── raw/
+│       ├── interim/
+│       └── processed/
+├── notebooks/
+│   ├── phase-1/
+│   │   ├── crypto.ipynb
+│   │   └── dropout.ipynb
+│   └── phase-2/
+│       ├── crypto.ipynb
+│       └── dropout.ipynb
+├── src/
+│   ├── crypto/
+│   │   ├── cleaning.py
+│   │   ├── features.py
+│   │   └── models.py
+│   ├── dropout/
+│   │   ├── cleaning.py
+│   │   ├── features.py
+│   │   └── models.py
+│   └── utils.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
